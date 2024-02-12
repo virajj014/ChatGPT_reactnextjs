@@ -1,0 +1,41 @@
+.leftSection {
+    background-color: var(--col1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.newChat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 10%;
+}
+
+.text1{
+    color: var(--textcol);
+    font-size: 20px;
+}
+
+.newChat div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newChat svg {
+    width: 30px;
+    height: 30px;
+    color: var(--textcol);
+}
+
+.allChats{
+    height: 70%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    gap: 20px;
+    padding: 0px 20px;
+}
