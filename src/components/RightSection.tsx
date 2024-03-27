@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from 'react'
 import styles from '@/styles/RightSection.module.css'
-import chatgptlogo from '@/assets/mainLogo.jpg'
-import chatgptlogo2 from '@/assets/mainLogo.jpg'
+import chatgptlogo from '@/assets/chatgptlogo.png'
+import chatgptlogo2 from '@/assets/chatgptlogo2.png'
 import nouserlogo from '@/assets/nouserlogo.png'
 import Image from 'next/image'
-import schoolbg from '@/assets/schoolBG.jpg'
+// import schoolbg from '@/assets/schoolBG.jpg'
 import { HashLoader } from 'react-spinners';
 const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API
 // console.log(API_KEY)
@@ -14,7 +14,7 @@ const RightSection = () => {
         {
             "role": "user",
             "parts": [{
-                "text": "This is Introductory dialogue for any prompt :  'Hello, my dear friend, I am the LSCM Bot. Ask me anything regarding procurement, purchase, and logistics. I will be happy to help you. '"
+                "text": "This is Introductory dialogue for any prompt :  'Hello, my dear friend, I am the CHATGPT Bot. Ask me anything regarding procurement, purchase, and logistics. I will be happy to help you. '"
             }]
         },
         {
@@ -38,7 +38,7 @@ const RightSection = () => {
         {
             "role": "user",
             "parts": [{
-                "text": "Special Dialogue 2 : Any prompt that mentions LSCM class / classroom  A : ' The LSCM Batch of 2023 is by far the best the university has ever seen by all sets of standards. Students from different come together to form a truly diverse and culturally rich classroom experience. I believe that all students are highly capable and will achieve all great things in their professional career!' "
+                "text": "Special Dialogue 2 : Any prompt that mentions CHATGPT class / classroom  A : ' The CHATGPT Batch of 2023 is by far the best the university has ever seen by all sets of standards. Students from different come together to form a truly diverse and culturally rich classroom experience. I believe that all students are highly capable and will achieve all great things in their professional career!' "
             }]
         },
         {
@@ -152,7 +152,7 @@ const RightSection = () => {
     }
     return (
         <div className={styles.rightSection}>
-            <Image src={schoolbg} alt="" className={styles.schoolbg} />
+            {/* <Image src={schoolbg} alt="" className={styles.schoolbg} /> */}
             <div className={styles.rightin}>
                 <div className={styles.chatgptversion}>
                     <p className={styles.text1}>Chat</p>
@@ -170,7 +170,7 @@ const RightSection = () => {
                                 <div key={index} className={styles.message}>
                                     <Image src={msg.role === 'user' ? nouserlogo : chatgptlogo2} width={50} height={50} alt="" />
                                     <div className={styles.details}>
-                                        <h2>{msg.role === 'user' ? 'You' : 'LSCM Bot'}</h2>
+                                        <h2>{msg.role === 'user' ? 'You' : 'CHATGPT Bot'}</h2>
                                         <p>{msg.parts[0].text}</p>
                                     </div>
                                 </div>
@@ -206,7 +206,7 @@ const RightSection = () => {
 
                 <div className={styles.bottomsection}>
                     <div className={styles.messagebar}>
-                        <input type='text' placeholder='Message LSCM Bot...'
+                        <input type='text' placeholder='Message CHATGPT Bot...'
                             onChange={(e) => setMessage(e.target.value)}
                             value={message}
                         />
@@ -223,7 +223,7 @@ const RightSection = () => {
                         }
 
                     </div>
-                    <p>LSCM BOT can make mistakes. Consider checking important information.</p>
+                    <p>CHATGPT BOT can make mistakes. Consider checking important information.</p>
 
                 </div>
             </div>

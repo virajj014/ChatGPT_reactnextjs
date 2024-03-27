@@ -1,5 +1,5 @@
 import React from 'react'
-import chatgptlogo from '@/assets/mainLogo.jpg'
+import chatgptlogo from '@/assets/chatgptlogo.png'
 import nouserlogo from '@/assets/nouserlogo.png'
 import Image from 'next/image'
 import styles from '@/styles/LeftSection.module.css'
@@ -34,7 +34,7 @@ const LeftSection = () => {
             <div className={styles.newChat}>
                 <div>
                     <Image src={chatgptlogo} alt="ChatGPT" width={50} height={50} />
-                    <p className={styles.text1}>LSCM BOT</p>
+                    <p className={styles.text1}>CHATGPT BOT</p>
 
                 </div>
 
@@ -54,7 +54,7 @@ const LeftSection = () => {
             <div className={styles.newChat}>
                 <div>
                     <Image src={nouserlogo} alt="ChatGPT" width={50} height={50} />
-                    <p className={styles.text1}>anirudhs2196@gmail.com</p>
+                    <p className={styles.text1}>virajj014@gmail.com</p>
                 </div>
 
             </div>
