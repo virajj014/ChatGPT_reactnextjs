@@ -1,7 +1,7 @@
 :root {
   --col1: rgb(13, 13, 13);
   --col2: #181414;
-  --textcol: white;
+  --textcol: rgb(255, 255, 255);
 }
 
 * {

@@ -1,21 +1,21 @@
 .mainpage {
   display: flex;
   flex-direction: row;
-  background-color: yellow;
+  /* background-color: yellow; */
   width: 100vw;
   height: 100vh;
   font-family: 'Roboto', sans-serif;
   color: #333;
-
+  background-color: black;
 }
 
 .leftOut{
-  background-color: red;
+  /* background-color: red; */
   width: 20%;
   overflow: hidden;
 }
 .rightOut{
-  background-color: blue;
+  /* background-color: blue; */
   width: 80%;
   
   overflow: hidden;

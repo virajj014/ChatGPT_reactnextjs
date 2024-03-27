@@ -23,7 +23,9 @@
     align-items: center;
     gap: 10px;
 }
-
+.newChat div img{
+    border-radius: 50%;
+}
 .newChat svg {
     width: 30px;
     height: 30px;

@@ -3,8 +3,24 @@
     height: 100vh;
     padding: 0px 20px;
     justify-content: space-between;
+    position: relative;
+}
+.schoolbg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 1;
 }
 
+.rightin{
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 .chatgptversion {
     display: flex;
     /* justify-content: center; */
@@ -13,11 +29,15 @@
     color: var(--textcol);
     font-size: 25px;
     gap: 10px;
+    z-index: 2;
+
 }
 
 .chatgptversion svg {
     width: 20px;
     height: 20px;
+    z-index: 2;
+
 }
 
 
@@ -85,6 +105,8 @@
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
+    z-index: 10;
+
 }
 
 
@@ -140,6 +162,7 @@
 .messages .message img{
     width: 35px;
     height: 35px;
+    border-radius: 50%;
 }
 
 .messages .message div {
@@ -159,4 +182,9 @@
     color: var(--textcol);
     font-size: 15px;
     max-width: 1000px;
+}
+
+
+.bottomsection p{
+    color: goldenrod;
 }

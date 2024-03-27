@@ -1,5 +1,5 @@
 import React from 'react'
-import chatgptlogo from '@/assets/chatgptlogo.png'
+import chatgptlogo from '@/assets/mainLogo.jpg'
 import nouserlogo from '@/assets/nouserlogo.png'
 import Image from 'next/image'
 import styles from '@/styles/LeftSection.module.css'
@@ -10,23 +10,23 @@ const LeftSection = () => {
     const allChats = [
         {
             id: 1,
-            chatName: 'This is sample Chat 1 for chatgpt...'
+            chatName: 'This is sample Chat 1'
         },
         {
             id: 2,
-            chatName: 'This is sample Chat 2 for chatgpt...'
+            chatName: 'This is sample Chat 2'
         },
         {
             id: 3,
-            chatName: 'This is sample Chat 3 for chatgpt...'
+            chatName: 'This is sample Chat 3'
         },
         {
             id: 4,
-            chatName: 'This is sample Chat 4 for chatgpt...'
+            chatName: 'This is sample Chat 4'
         },
         {
             id: 5,
-            chatName: 'This is sample Chat 5 for chatgpt...'
+            chatName: 'This is sample Chat 5'
         }
     ]
     return (
@@ -34,7 +34,7 @@ const LeftSection = () => {
             <div className={styles.newChat}>
                 <div>
                     <Image src={chatgptlogo} alt="ChatGPT" width={50} height={50} />
-                    <p className={styles.text1}>New chat</p>
+                    <p className={styles.text1}>LSCM BOT</p>
 
                 </div>
 
@@ -54,7 +54,7 @@ const LeftSection = () => {
             <div className={styles.newChat}>
                 <div>
                     <Image src={nouserlogo} alt="ChatGPT" width={50} height={50} />
-                    <p className={styles.text1}>Harshal Jain</p>
+                    <p className={styles.text1}>anirudhs2196@gmail.com</p>
                 </div>
 
             </div>
